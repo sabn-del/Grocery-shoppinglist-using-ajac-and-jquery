@@ -1,0 +1,96 @@
+
+    [
+        {
+            "Slno":1,
+            "Name":"chicken",
+            "quantity":2,
+            "Unit":"1 kg",
+            "Department":"Non-veg",
+            "Notes":" sudhsaudh"
+
+        },
+        {
+            "Slno":2,
+            "Name":"bluberries",
+            "quantity":2 ,
+            "Unit":"1 kg",
+            "Department":"fruit",
+           "Notes":" sudhsaudh"
+
+        },
+        {
+            "Slno":3,
+            "Name":" beef",
+            "quantity":2,
+            "Unit":"1 kg",
+            "Department":"Non-veg",
+            "Notes":" sudhsaudh"
+
+        },
+        {
+           "Slno":4,
+            "Name":"fish",
+            "quantity":2,
+           "Unit":"1 kg",
+            "Department":"Non-veg",
+            "Notes":" sudhsaudh"
+
+        },
+        {
+            "Slno":5,
+            "Name":"oil ",
+            "quantity":2,
+            "Unit":"1 kg",
+            "Department":"oil and fact",
+            "Notes":" sudhsaudh"
+
+        },
+        {
+            "Slno":6,
+            "Name":"milk",
+            "quantity":2,
+            "Unit":"1 kg",
+            "Department":"Dairy and eggs",
+            "Notes":" sudhsaudh"
+
+        },
+        {
+            "Slno":7,
+            "Name":"egg",
+            "quantity":2,
+            "Unit":"1 kg",
+            "Department":"Daiary and eggs",
+            "Notes":" sudhsaudh"
+
+        },
+        {
+            "Slno":8,
+            "Name":"cheese",
+            "quantity":2,
+            "Unit":"1 kg",
+            "Department":"Dairy and eggs",
+            "Notes":" sudhsaudh"
+
+        },
+        {
+            "Slno":9,
+            "Name":"apple",
+            "quantity":"2",
+            "Unit":"1 kg",
+            "Department":"fruit",
+            "Notes":" sudhsaudh"
+
+        },
+        
+        {
+            "Slno":10,
+            "Name":"onions",
+            "quantity":2,
+            "Unit":"1 kg",
+            "Department":"veg",
+            "Notes":" sudhsaudh"
+        }
+
+
+
+    ]

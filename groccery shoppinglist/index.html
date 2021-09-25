@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/207585c7cf.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark justify-content-center">
+        <button type="button" class= btn-btn-primary onclick="onlod();">grocery</button>
+    </nav>
+     <h1>Groccery Items</h1>
+     <table id="myTable">
+        <tr>
+            <th>Slno</th>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Unity</th>
+            <th>Department</th>
+            <th>Notes</th>
+        </tr>
+        <tbody></tbody>
+    </table>
+     <script type="text/javascript">
+     const ranking= document.querySelector("#myTable>tbody");
+         function onlod(){
+             var xhttp= new XMLHttpRequest();
+             xhttp.open("get","gro.json");
+
+
+             xhttp.onload=function(){
+                 const json=JSON.parse(xhttp.responseText);
+                 populate(json);
+
+             }
+             xhttp.send();
+
+
+         };
+         function populate(json){
+             
+             json.forEach((row) => {
+                 const tr = document.createElement("tr");
+                 row.forEach((cell)=>{
+                     const td = document.createElement("td");
+                     td.textContent=cell;
+                     tr.appendChild(td);
+                 });
+               ranking.appendChild(tr);
+             });
+         }
+        
+         </script>
+
+
+      
+</body>
+</html>
